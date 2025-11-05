@@ -12,7 +12,11 @@ public class input_Checkbox_radio {
 
         driver.findElement(By.name("firstname")).sendKeys("vishajakhad");
 
+        //Radiobox
+        driver.findElement(By.id("sex-1")).click();
 
+        //checkbox
+        driver.findElement(By.id("tool-1")).click();
 
 
     }
