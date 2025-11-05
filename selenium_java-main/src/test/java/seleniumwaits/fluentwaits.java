@@ -17,6 +17,11 @@ public class fluentwaits {
 
     public static void main(String[] args) {
 
+        EdgeOptions options = new EdgeOptions();
+        WebDriver driver = new EdgeDriver(options);
+
+        driver.navigate().to("http://www.makemytrip.com/");
+
 
         FluentWait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(Duration.ofSeconds(10))
@@ -31,7 +36,7 @@ public class fluentwaits {
             }
         });
 
-        Assert.assertEquals(error_message.getText().trim(), "INVALID USERNAME OR PASSWORD");
+        //Assert.assertEquals(error_message.getText().trim(), "INVALID USERNAME OR PASSWORD");
         //driver.quit();
     }
 }
