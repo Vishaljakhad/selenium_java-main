@@ -4,7 +4,7 @@ import jdk.jfr.Description;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
-public class sleep {
+public class threadsleep {
 
     @Description("verify the koalaliving login")
     @Test
@@ -15,7 +15,7 @@ public class sleep {
         driver.get("https://koalaliving.com.au/");
 
 
-        Thread.sleep(20000);  //jvm will be hault not webdriver
+        Thread.sleep(20000);  //jvm will be hault not webdriver // check notes
 
 
     }
